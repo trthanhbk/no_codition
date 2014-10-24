@@ -1,0 +1,12 @@
+{
+    "require": {
+        "phpspec/phpspec": "~2.0",
+        "phpunit/phpunit": "4.2.*",
+        "bldr-io/bldr": "~3.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src"
+        }
+    }
+}

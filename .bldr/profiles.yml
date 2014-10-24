@@ -1,0 +1,10 @@
+bldr:
+    profiles:
+        default:
+            description: 'Development Profile'
+            tasks:
+                - test
+        test:
+            description: "Test Profile"
+            tasks:
+                - testDev        
