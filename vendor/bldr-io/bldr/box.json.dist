@@ -1,0 +1,52 @@
+{
+    "alias": "bldr.phar",
+    "chmod": "0755",
+    "directories": ["src", "bin"],
+    "files": [
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "tests",
+                "behat",
+                "phpunit",
+                "raulfraile",
+                "*Test.php",
+                "test",
+                "Tests",
+                "Test",
+                "node_modules",
+                "*.lock"
+            ],
+            "in": "vendor"
+        },
+        {
+            "name": "*.yml",
+            "exclude": [
+                "tests",
+                "behat",
+                "phpunit",
+                "raulfraile",
+                "*Test.php",
+                "test",
+                "Tests",
+                "Test",
+                "node_modules",
+                "*.lock"
+            ],
+            "in": "vendor"
+        },
+        {
+            "name": "hiddeninput.exe",
+            "in": "vendor/symfony/console/Symfony/Component/Console/Resources/bin"
+        }
+    ],
+    "extract": true,
+    "git-commit": "git-commit",
+    "git-version": "package_version",
+    "main": "bin/bldr",
+    "output": "bldr.phar",
+    "stub": true
+}
